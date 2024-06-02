@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>健康管理 - 遠程監護和健康管理平台</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #007BFF;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #0056f9;
+            color: white;
+        }
+        .content {
+            padding: 20px;
+        }
+        /* 表單樣式 */
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group select, .form-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056f9;
+        }
+    </style>
+</head>
+<body>
+   <h1>遠程監護和健康管理平台</h1>
+    <div class="navbar"style="width: 100%">
+         <a href="index.html"style="width: 16%">首頁</a>
+        <a href="design_concept.html"style="width: 16%">設計理念</a>
+        <a href="health_management.html"style="width: 16%">健康管理頁面</a>
+        <a href="remote_healthcare.html"style="width: 16%">遠端醫療頁面</a>
+        <a href="contact_us.html"style="width: 16%">聯絡我們</a>
+    </div>
+    <div class="content">
+        <h1>健康管理</h1>
+        <div class="form-group">
+                <label for="doctor">醫生：</label>
+                <select id="doctor" name="doctor">
+                    <option value="王醫師">王醫師</option>
+                    <option value="陳醫師">陳醫師</option>
+                    <option value="廖醫師">廖醫師</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">日期：</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="form-group">
+                <label for="time">時間：</label>
+                <select id="time" name="time">
+                    <option value="早上">早上</option>
+                    <option value="下午">下午</option>
+                    <option value="晚上">晚上</option>
+                </select>
+            </div>
+                <div class="form-group">
+                    <label for="measurement-value">填寫測量數值</label>
+                    <input type="number" id="measurement-value" name="measurement-value" step="0.01" placeholder="請輸入測量數值">
+                </div>
+               <a href="測量提交.html" class="button">提交</a>
+               <a href="查詢預約.html" class="button">查詢預約查詢預約</a>
+
+
+    
+            </form>
+        </div>
+    </div>
+</body>
+</html>

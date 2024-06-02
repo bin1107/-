@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>預約查詢</title>
+    <style>
+        /* 更新CSS以設定頁面風格 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        select, input[type="date"] {
+            padding: 8px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #0056f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>預約查詢</h1>
+    <form>
+        <div class="form-group">
+            <label for="date">日期:</label>
+            <input type="date" id="date" name="date">
+        </div>
+        <div class="form-group">
+            <label for="time">時間:</label>
+            <select id="time" name="time">
+                <option value="morning">早上</option>
+                <option value="afternoon">中午</option>
+                <option value="evening">晚上</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="doctor">醫師:</label>
+            <select id="doctor" name="doctor">
+                <option value="王醫師">王醫師</option>
+                <option value="陳醫師">陳醫師</option>
+                <option value="廖醫師">廖醫師</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="status">預約狀況:</label>
+            <select id="status" name="status">
+                <option value="以預約">以預約</option>
+                <option value="未預約">未預約</option>
+            </select>
+        </div>
+        <button type="button" onclick="redirectToIndex()">OK</button>
+        <button type="button" onclick="redirectToCancel()">取消預約</button>
+    </form>
+
+    <script>
+        // JavaScript函數，用於將按鈕連結到index.html
+        function redirectToIndex() {
+            window.location.href = "index.html";
+        }
+
+        // JavaScript函數，用於將按鈕連結到取消預約.html
+        function redirectToCancel() {
+            window.location.href = "取消預約.html";
+        }
+    </script>
+</body>
+</html>

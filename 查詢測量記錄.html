@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查詢測量記錄</title>
+    <style>
+        /* 更新CSS以設定頁面風格 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        select, input[type="time"], input[type="number"] {
+            padding: 8px;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>查詢測量記錄</h1>
+    <form>
+        <div class="form-group">
+            <label for="time">時間:</label>
+            <input type="time" id="time" name="time">
+        </div>
+        <div class="form-group">
+            <label for="measurement">測量類型:</label>
+            <select id="measurement" name="measurement">
+                <option value="血壓">血壓</option>
+                <option value="血糖">血糖</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="value">測量數值:</label>
+            <input type="number" id="value" name="value">
+        </div>
+        <!-- 將按鈕連結到index.html -->
+        <button type="button" onclick="redirectToIndex()">OK</button>
+    </form>
+
+    <!-- 用於顯示查詢結果的區塊 -->
+    <div id="result"></div>
+
+    <script>
+        // JavaScript函數，用於將按鈕連結到index.html
+        function redirectToIndex() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

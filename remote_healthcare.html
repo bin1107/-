@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>預約醫生</title>
+    <style>
+        <style>
+        {
+            font-family: Arial, sans-serif;
+            margin: 0; /* 移除默認邊距 */
+            padding: 0; /* 移除默認內距 */
+        }
+        .navbar {
+            background-color: #007BFF; /* 設置背景為亮藍色 */
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white; /* 文字顏色為白色 */
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            width: 20%; /* 將每個按鈕的寬度設置為導航欄的 20% */
+        }
+        .navbar a:hover {
+            background-color: #0056f9; /* 鼠標懸浮時的背景顏色為深藍色 */
+            color: white; /* 鼠標懸浮時文字顏色為白色，增加對比 */
+        }
+        /* 新增登入及註冊按鈕的樣式 */
+        .login-register {
+            position: fixed; /* 固定位置 */
+            right: 20px; /* 右邊距 */
+            bottom: 20px; /* 下邊距 */
+        }
+        .button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        .button:hover {
+            background-color: #0056f9;
+        }
+ 
+    
+
+
+        {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+        .container {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group select {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 200px;
+            margin-right: 10px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>預約醫生</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="doctor">醫生：</label>
+                <select id="doctor" name="doctor">
+                    <option value="王醫師">王醫師</option>
+                    <option value="陳醫師">陳醫師</option>
+                    <option value="廖醫師">廖醫師</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">日期：</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="form-group">
+                <label for="time">時間：</label>
+                <select id="time" name="time">
+                    <option value="早上">早上</option>
+                    <option value="下午">下午</option>
+                    <option value="晚上">晚上</option>
+                </select>
+            </div>
+            <a href="預約成功.html" class="button">提交</a>
+            <a href="index.html" class="button">返回</a>
+            <a href="查詢預約.html" class="button">查詢預約</a>
+        </form>
+    </div>
+</body>
+</html>

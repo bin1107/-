@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>設計理念 - 遠程監護和健康管理平台</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; /* 移除默認邊距 */
+            padding: 0; /* 移除默認內距 */
+        }
+        .navbar {
+            background-color: #007BFF; /* 設置背景為亮藍色 */
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white; /* 文字顏色為白色 */
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            width: 20%; /* 將每個按鈕的寬度設置為導航欄的 20% */
+        }
+        .navbar a:hover {
+            background-color: #0056f9; /* 鼠標懸浮時的背景顏色為深藍色 */
+            color: white; /* 鼠標懸浮時文字顏色為白色，增加對比 */
+        }
+        /* 新增登入及註冊按鈕的樣式 */
+        .login-register {
+            position: fixed; /* 固定位置 */
+            right: 20px; /* 右邊距 */
+            bottom: 20px; /* 下邊距 */
+        }
+        .button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+        .button:hover {
+            background-color: #0056f9;
+        }
+    </style>
+         <style>
+        /* 使用CSS限制圖片大小 */
+        img {
+            max-width: 400px;
+            max-height: 400px;
+            float: right; /* 將圖片向右浮動 */
+            margin-left: 50px; /* 添加左邊距以與文字分開 */
+        }
+
+        /* 清除浮動以防止後續元素受到影響 */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <h1>遠程監護和健康管理平台</h1>
+    <div class="navbar"style="width: 100%">
+         <a href="index.html"style="width: 16%">首頁</a>
+        <a href="design_concept.html"style="width: 16%">設計理念</a>
+        <a href="health_management.html"style="width: 16%">健康管理頁面</a>
+        <a href="remote_healthcare.html"style="width: 16%">遠端醫療頁面</a>
+        <a href="contact_us.html"style="width: 16%">聯絡我們</a>
+    </div>
+    <div style="float: right; width: 100%;" >
+        <div style="padding-left: 20px; padding-top: 20px;width: 60%;float: left;">
+            <h1>設計理念</h1>
+            <p>遠程監護與健康管理平台旨在整合電子健康記錄、即時監測技術和智慧算法，實現醫生與患者間的即時溝通，</p>
+            <p>提供個性化的醫療指導和健康管理方案，從而實現遠程醫療監護和患者自主管理的有效結合。</p>
+            <!-- 使用div包裹照片和文字，並添加clearfix類來清除浮動 -->
+        </div>
+        <div class="clearfix" style="width:35%;float: right;">
+            <!-- 添加圖片 -->
+            <img src="https://th.bing.com/th/id/OIG2.WlDjw_Atod.APSFKBZqL?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="示例圖片">
+        </div>
+    </div>
+    <!-- 新增登入及註冊按鈕 -->
+    <div class="login-register">
+        <a href="登入.html" class="button">登入</a>
+        <a href="註冊.html" class="button">註冊</a>
+    </div>
+</body>
+</html>
